@@ -4,6 +4,8 @@
 
 [中文说明](docs/README.zh-CN.md) · [Release APK](https://github.com/linchuanXu/daytrace-public/releases/tag/v0.1.0) · [Privacy](PRIVACY.md) · [Permissions](PERMISSIONS.md)
 
+![DayTrace hero](docs/assets/daytrace-hero.png)
+
 DayTrace records what your Android phone can already tell about your day, then turns it into local Markdown and JSON context you can read, search, archive, or connect to your own AI workflows.
 
 Your phone knows which apps shaped your attention, when you moved, what notifications arrived, what files changed, and which calls or messages interrupted the day. That context should belong to you.
@@ -48,6 +50,14 @@ DayTrace tries to be a small open foundation for the opposite: local files, insp
 - Daily Markdown reports plus structured JSON summaries for your own analysis.
 
 Android data access is best-effort. Some modules depend on device vendor behavior, Android version, permissions and how recently the Helper app was opened.
+
+## Screenshots
+
+The images below use simulated data. No personal records are included.
+
+| Android Helper | Daily Report |
+|---|---|
+| ![DayTrace Helper screenshot](docs/assets/daytrace-helper-screenshot.png) | ![DayTrace report screenshot](docs/assets/daytrace-report-screenshot.png) |
 
 ## What You Can Build With It
 

@@ -4,6 +4,8 @@
 
 [English](../README.md) · [下载 APK](https://github.com/linchuanXu/daytrace-public/releases/tag/v0.1.0) · [隐私说明](../PRIVACY.md) · [权限说明](../PERMISSIONS.md)
 
+![DayTrace hero](assets/daytrace-hero.png)
+
 DayTrace 会把 Android 手机里已经存在的日常线索，整理成保存在你电脑本地的 Markdown 和 JSON。你可以自己阅读、搜索、归档，也可以把它接到本地大模型、个人助理或第二大脑工作流里。
 
 手机其实知道你的一天是怎么过的：注意力花在哪些 App 上、什么时候移动过、哪些通知打断了你、哪些文件发生变化、哪些电话和短信进入了生活。这个上下文应该属于你自己。
@@ -48,6 +50,14 @@ DayTrace 尝试做相反的事情：本地文件、可检查源码、明确权�
 - 每日 Markdown 报告和结构化 JSON 摘要。
 
 Android 数据访问是 best-effort：不同 Android 版本、厂商系统、权限状态和 Helper 打开频率都会影响完整性。
+
+## 截图
+
+以下图片使用模拟数据生成，不包含任何真实个人记录。
+
+| Android Helper | 每日报告 |
+|---|---|
+| ![DayTrace Helper screenshot](assets/daytrace-helper-screenshot.png) | ![DayTrace report screenshot](assets/daytrace-report-screenshot.png) |
 
 ## 可以用它做什么
 

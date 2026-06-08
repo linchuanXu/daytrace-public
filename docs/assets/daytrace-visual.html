@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DayTrace Visual Assets</title>
+  <style>
+    :root {
+      --ink: #171512;
+      --muted: #6e675d;
+      --paper: #f4efe5;
+      --card: #fffaf0;
+      --line: #ded4c2;
+      --blue: #2558d8;
+      --green: #1f8f64;
+      --red: #b5463c;
+      --gold: #bd8b32;
+      --shadow: 0 22px 60px rgba(36, 28, 16, 0.16);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+
+    .stage {
+      width: 1400px;
+      height: 820px;
+      padding: 54px 64px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(37, 88, 216, 0.13), transparent 35%),
+        linear-gradient(315deg, rgba(31, 143, 100, 0.16), transparent 42%),
+        radial-gradient(circle at 74% 18%, rgba(189, 139, 50, 0.16), transparent 28%),
+        #f4efe5;
+    }
+
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(23, 21, 18, .055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 21, 18, .055) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(90deg, rgba(0,0,0,.7), rgba(0,0,0,.2));
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 72px;
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid rgba(23, 21, 18, .18);
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-size: 20px;
+      letter-spacing: .02em;
+      color: var(--muted);
+      background: rgba(255, 250, 240, .7);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(31, 143, 100, .14);
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 28px 0 20px;
+      font-size: 66px;
+      line-height: .96;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      font-size: 25px;
+      line-height: 1.34;
+      color: #403b34;
+      margin: 0 0 30px;
+      max-width: 500px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .chip {
+      border: 1px solid rgba(23, 21, 18, .18);
+      background: rgba(255, 250, 240, .76);
+      padding: 11px 14px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .visual-stack {
+      position: relative;
+      height: 690px;
+    }
+
+    .phone {
+      position: absolute;
+      left: 18px;
+      top: 14px;
+      width: 300px;
+      height: 620px;
+      border-radius: 42px;
+      background: #111;
+      box-shadow: var(--shadow);
+      padding: 14px;
+      transform: rotate(-4deg);
+    }
+
+    .phone-screen {
+      height: 100%;
+      border-radius: 31px;
+      background: #f7f3ec;
+      overflow: hidden;
+      padding: 18px;
+    }
+
+    .phone-top {
+      display: flex;
+      justify-content: space-between;
+      color: #7b756d;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .app-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      margin-bottom: 6px;
+    }
+
+    .app-sub {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.32;
+      margin-bottom: 18px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .metric {
+      background: #fffaf1;
+      border: 1px solid #e4dacb;
+      border-radius: 16px;
+      padding: 13px;
+      min-height: 82px;
+    }
+
+    .metric b { display: block; font-size: 25px; margin-bottom: 4px; }
+    .metric span { color: var(--muted); font-size: 13px; }
+
+    .permission {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      padding: 12px 0;
+      border-top: 1px solid #e4dacb;
+      font-size: 15px;
+    }
+
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .report {
+      position: absolute;
+      right: 0;
+      top: 72px;
+      width: 640px;
+      height: 535px;
+      background: rgba(255, 250, 240, .95);
+      border: 1px solid rgba(23, 21, 18, .14);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .report h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      margin: 0 0 6px;
+    }
+
+    .report-sub {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 78px 1fr 78px;
+      gap: 14px;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .bar {
+      height: 22px;
+      border-radius: 999px;
+      background: #e8dece;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: inherit;
+      background: var(--blue);
+    }
+
+    .fill.green { background: var(--green); }
+    .fill.gold { background: var(--gold); }
+    .fill.red { background: var(--red); }
+
+    .context-card {
+      margin-top: 25px;
+      border: 1px solid #e4dacb;
+      border-radius: 15px;
+      padding: 18px;
+      background: #f7f0e3;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+    }
+
+    .context-card b {
+      font-size: 23px;
+      display: block;
+    }
+
+    .context-card span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .caption {
+      position: absolute;
+      right: 24px;
+      bottom: 20px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .shot {
+      width: 900px;
+      height: 650px;
+      padding: 40px;
+      background: #f4efe5;
+    }
+
+    .shot .phone {
+      left: 140px;
+      top: 24px;
+      transform: none;
+    }
+
+    .shot .report {
+      left: 60px;
+      top: 36px;
+      right: auto;
+      width: 780px;
+      height: 570px;
+    }
+  </style>
+</head>
+<body>
+  <section class="stage" id="hero">
+    <div class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Local-first Android context</div>
+        <h1>Private phone memory for the AI era.</h1>
+        <p class="lead">Turn Android activity into Markdown and JSON records you own, search, archive, and connect to local AI workflows.</p>
+        <div class="chips">
+          <div class="chip">No cloud</div>
+          <div class="chip">Open source</div>
+          <div class="chip">Helper APK</div>
+          <div class="chip">Markdown + JSON</div>
+        </div>
+      </div>
+      <div class="visual-stack">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-top"><span>09:41</span><span>DayTrace</span></div>
+            <div class="app-title">日迹</div>
+            <div class="app-sub">Your local phone context recorder. Export today, keep it private.</div>
+            <div class="metric-grid">
+              <div class="metric"><b>6h 12m</b><span>screen context</span></div>
+              <div class="metric"><b>38</b><span>app switches</span></div>
+              <div class="metric"><b>142</b><span>notifications</span></div>
+              <div class="metric"><b>9</b><span>location samples</span></div>
+            </div>
+            <div class="permission"><span class="check">✓</span><div><b>Usage access</b><br><span>App timeline ready</span></div></div>
+            <div class="permission"><span class="check">✓</span><div><b>Notification archive</b><br><span>Live context enabled</span></div></div>
+            <div class="permission"><span class="check">✓</span><div><b>Local export</b><br><span>/sdcard/PhoneTracker/export</span></div></div>
+          </div>
+        </div>
+        <div class="report">
+          <h2>2026-01-01 Report</h2>
+          <div class="report-sub">Simulated local Markdown output</div>
+          <div class="timeline">
+            <div class="row"><span>09:00</span><div class="bar"><div class="fill" style="width: 58%"></div></div><span>Focus</span></div>
+            <div class="row"><span>10:30</span><div class="bar"><div class="fill green" style="width: 76%"></div></div><span>Work</span></div>
+            <div class="row"><span>12:10</span><div class="bar"><div class="fill gold" style="width: 42%"></div></div><span>Move</span></div>
+            <div class="row"><span>14:20</span><div class="bar"><div class="fill red" style="width: 33%"></div></div><span>Alerts</span></div>
+            <div class="row"><span>18:40</span><div class="bar"><div class="fill" style="width: 64%"></div></div><span>Read</span></div>
+          </div>
+          <div class="context-card">
+            <div><b>18</b><span>apps seen</span></div>
+            <div><b>12</b><span>files changed</span></div>
+            <div><b>4</b><span>calendar hints</span></div>
+          </div>
+          <div class="caption">Generated with simulated data. No personal records included.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shot" id="phone-shot">
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="phone-top"><span>09:41</span><span>DayTrace</span></div>
+        <div class="app-title">日迹</div>
+        <div class="app-sub">Local context is ready. Open Helper, export, sync on desktop.</div>
+        <div class="metric-grid">
+          <div class="metric"><b>Today</b><span>3 modules refreshed</span></div>
+          <div class="metric"><b>14d</b><span>usage cache</span></div>
+          <div class="metric"><b>Local</b><span>no cloud sync</span></div>
+          <div class="metric"><b>JSON</b><span>export format</span></div>
+        </div>
+        <div class="permission"><span class="check">✓</span><div><b>Usage access</b><br><span>Daily app usage</span></div></div>
+        <div class="permission"><span class="check">✓</span><div><b>Location samples</b><br><span>Best-effort snapshots</span></div></div>
+        <div class="permission"><span class="check">✓</span><div><b>Notifications</b><br><span>Live archive enabled</span></div></div>
+        <div class="permission"><span class="check">✓</span><div><b>Export</b><br><span>Ready for ADB pull</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shot" id="report-shot">
+    <div class="report">
+      <h2>Daily Context Report</h2>
+      <div class="report-sub">Markdown and JSON generated locally from simulated data</div>
+      <div class="timeline">
+        <div class="row"><span>08:15</span><div class="bar"><div class="fill green" style="width: 70%"></div></div><span>Deep work</span></div>
+        <div class="row"><span>10:02</span><div class="bar"><div class="fill" style="width: 51%"></div></div><span>Messages</span></div>
+        <div class="row"><span>11:48</span><div class="bar"><div class="fill gold" style="width: 40%"></div></div><span>Commute</span></div>
+        <div class="row"><span>15:30</span><div class="bar"><div class="fill red" style="width: 29%"></div></div><span>Interrupt</span></div>
+        <div class="row"><span>20:10</span><div class="bar"><div class="fill" style="width: 62%"></div></div><span>Reading</span></div>
+      </div>
+      <div class="context-card">
+        <div><b>6h 12m</b><span>screen timeline</span></div>
+        <div><b>142</b><span>notification events</span></div>
+        <div><b>9</b><span>location samples</span></div>
+      </div>
+      <div class="caption">Simulated example. DayTrace does not upload personal data.</div>
+    </div>
+  </section>
+
+  <script>
+    const selected = location.hash ? location.hash.slice(1) : "hero";
+    for (const section of document.querySelectorAll("section")) {
+      if (section.id !== selected) section.style.display = "none";
+    }
+    document.body.style.width = selected === "hero" ? "1400px" : "900px";
+    document.body.style.height = selected === "hero" ? "820px" : "650px";
+    document.body.style.overflow = "hidden";
+  </script>
+</body>
+</html>
