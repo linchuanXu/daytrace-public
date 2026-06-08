@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "date": "2026-03-17",
+  "timezone": "Asia/Shanghai",
+  "source": "PhoneTrackerHelper",
+  "source_status": "empty_from_system",
+  "recorded_by_helper": false,
+  "raw_system_has_data": false,
+  "cache_has_data": false,
+  "exported_at": "2026-05-16T10:40:00+08:00",
+  "query_range": {
+    "start": "2026-03-17T00:00:00+08:00",
+    "end": "2026-03-18T00:00:00+08:00"
+  },
+  "diagnostics": {
+    "queried_at": "2026-05-16T10:39:59+08:00",
+    "raw_app_count": 0,
+    "exported_app_count": 0,
+    "has_usage_permission": true,
+    "source_status": "empty_from_system",
+    "export_notes": [
+      "Helper checked this day, but Android returned no daily app records."
+    ]
+  },
+  "has_data": false,
+  "app_count": 0,
+  "apps": []
+}

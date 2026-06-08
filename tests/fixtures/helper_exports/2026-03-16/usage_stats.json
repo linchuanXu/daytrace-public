@@ -1,0 +1,30 @@
+{
+  "date": "2026-03-16",
+  "timezone": "Asia/Shanghai",
+  "source": "UsageStatsManager.INTERVAL_DAILY",
+  "exported_at": "2026-05-15T21:40:00+08:00",
+  "query_range": {
+    "start": "2026-03-16T00:00:00+08:00",
+    "end": "2026-03-17T00:00:00+08:00"
+  },
+  "has_data": true,
+  "app_count": 2,
+  "apps": [
+    {
+      "package": "com.tencent.mm",
+      "name": "微信",
+      "total_foreground_seconds": 3600,
+      "total_visible_seconds": 3720,
+      "last_used": "2026-03-16T22:30:12+08:00",
+      "launch_count": 42
+    },
+    {
+      "package": "com.example.system",
+      "name": "System Noise",
+      "total_foreground_seconds": 900,
+      "total_visible_seconds": 900,
+      "last_used": "2026-03-16T12:00:00+08:00",
+      "launch_count": 3
+    }
+  ]
+}

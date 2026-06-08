@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/iosBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/iosCardBackground</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="colorPrimary">@color/iosAccent</item>
+        <item name="colorPrimaryVariant">#2F2D28</item>
+        <item name="colorOnPrimary">@color/iosCardBackground</item>
+        <item name="colorSecondary">@color/iosAccent</item>
+        <item name="colorOnSecondary">@color/iosCardBackground</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

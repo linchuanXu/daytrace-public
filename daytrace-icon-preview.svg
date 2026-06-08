@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">DayTrace private vault icon preview</title>
+  <desc id="desc">A deep navy app icon with a teal vault door and connected timeline data points.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18%" y1="12%" x2="86%" y2="94%">
+      <stop offset="0" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0B1B2E"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="47%">
+      <stop offset="0" stop-color="#20E0B2" stop-opacity="0.26"/>
+      <stop offset="0.58" stop-color="#20E0B2" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#20E0B2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tealGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.125 0 0 0 0 0.878 0 0 0 0 0.698 0 0 0 0.72 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cyanGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.302 0 0 0 0 0.843 0 0 0 0 1 0 0 0 0.62 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <symbol id="daytraceIcon" viewBox="0 0 108 108">
+      <rect width="108" height="108" rx="24" fill="url(#bg)"/>
+      <path d="M0 0h108v108H28c22-18 41-37 57-62C94 31 101 16 108 0z" fill="#0B1B2E"/>
+      <circle cx="54" cy="54" r="35" fill="url(#halo)"/>
+      <rect x="32" y="30" width="44" height="48" rx="7" fill="none" stroke="#20E0B2" stroke-opacity="0.2" stroke-width="9"/>
+      <rect x="32" y="30" width="44" height="48" rx="7" fill="none" stroke="#20E0B2" stroke-width="4" filter="url(#tealGlow)"/>
+      <path d="M45 57L54 49L63 55L70 44" fill="none" stroke="#4DD7FF" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      <path d="M45 57L54 49L63 55L70 44" fill="none" stroke="#4DD7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" filter="url(#cyanGlow)"/>
+      <circle cx="45" cy="52" r="5" fill="#20E0B2" filter="url(#tealGlow)"/>
+      <circle cx="54" cy="44" r="5" fill="#20E0B2" filter="url(#tealGlow)"/>
+      <circle cx="63" cy="50" r="5" fill="#20E0B2" filter="url(#tealGlow)"/>
+      <circle cx="70" cy="39" r="5" fill="#4DD7FF" filter="url(#cyanGlow)"/>
+      <circle cx="55" cy="70" r="4" fill="#20E0B2"/>
+    </symbol>
+  </defs>
+  <rect width="960" height="560" fill="#F5F7FA"/>
+  <text x="80" y="78" fill="#0B1B2E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">DayTrace Icon Preview</text>
+  <text x="82" y="112" fill="#526070" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Private vault + timeline, deep navy black and teal green</text>
+  <use href="#daytraceIcon" x="96" y="156" width="300" height="300"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="460" y="184" fill="#0B1B2E" font-size="22" font-weight="700">Launcher sizes</text>
+    <text x="460" y="214" fill="#526070" font-size="15">Check whether the safe door and timeline stay readable when scaled down.</text>
+    <use href="#daytraceIcon" x="462" y="256" width="144" height="144"/>
+    <use href="#daytraceIcon" x="642" y="280" width="96" height="96"/>
+    <use href="#daytraceIcon" x="780" y="304" width="56" height="56"/>
+    <text x="504" y="430" fill="#526070" font-size="14" text-anchor="middle">144px</text>
+    <text x="690" y="430" fill="#526070" font-size="14" text-anchor="middle">96px</text>
+    <text x="808" y="430" fill="#526070" font-size="14" text-anchor="middle">56px</text>
+    <text x="82" y="505" fill="#526070" font-size="15">Android resource equivalent: adaptive icon background + foreground vector</text>
+  </g>
+</svg>

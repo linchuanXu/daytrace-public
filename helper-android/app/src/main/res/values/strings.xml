@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日迹</string>
+    <string name="accessibility_archive_description">Archive screen and interaction events for personal phone timeline reports.</string>
+</resources>

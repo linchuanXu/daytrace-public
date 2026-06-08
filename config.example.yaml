@@ -1,0 +1,32 @@
+adb:
+  path: null
+  serial: null
+
+data:
+  output_dir: data
+  start_date: "2026-01-01"
+  keep_raw: false
+  raw_retain_days: 0
+
+helper:
+  enabled: true
+  remote_export_dir: /sdcard/PhoneTracker/export
+  local_export_dir: data/_helper_exports
+  pull_on_sync: true
+
+timezone: "Asia/Shanghai"
+
+filter:
+  system_prefixes:
+    - com.android.
+    - com.mediatek.
+    - com.oplus.
+    - com.coloros.
+    - com.heytap.
+    - com.nearme.
+    - android
+    - com.android
+  force_include:
+    - com.android.mms
+    - com.android.dialer
+    - com.android.launcher

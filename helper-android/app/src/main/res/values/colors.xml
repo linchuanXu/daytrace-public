@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notion-inspired neutral palette -->
+    <color name="iosBackground">#F7F6F3</color>
+    <color name="iosCardBackground">#FFFFFF</color>
+    <color name="iosAccent">#37352F</color>
+    <color name="iosTextPrimary">#37352F</color>
+    <color name="iosTextSecondary">#787774</color>
+    <color name="iosSeparator">#E9E6DF</color>
+    <color name="iosGreen">#2F7D32</color>
+    <color name="iosRed">#B23B3B</color>
+</resources>

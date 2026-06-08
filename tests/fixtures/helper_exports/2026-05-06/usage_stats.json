@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "date": "2026-05-06",
+  "timezone": "Asia/Shanghai",
+  "source": "PhoneTrackerHelper",
+  "source_status": "cached_only",
+  "recorded_by_helper": true,
+  "raw_system_has_data": false,
+  "cache_has_data": true,
+  "exported_at": "2026-05-16T10:40:00+08:00",
+  "query_range": {
+    "start": "2026-05-06T00:00:00+08:00",
+    "end": "2026-05-07T00:00:00+08:00"
+  },
+  "diagnostics": {
+    "queried_at": "2026-05-16T10:39:59+08:00",
+    "raw_app_count": 0,
+    "exported_app_count": 1,
+    "has_usage_permission": true,
+    "source_status": "cached_only",
+    "export_notes": [
+      "System query was empty during export; using helper local cache."
+    ]
+  },
+  "has_data": true,
+  "app_count": 1,
+  "apps": [
+    {
+      "package": "com.tencent.mm",
+      "name": "微信",
+      "total_foreground_seconds": 1800,
+      "total_visible_seconds": 1900,
+      "last_used": "2026-05-06T21:00:00+08:00",
+      "launch_count": 9,
+      "recorded_by_helper": true,
+      "source": "helper_cache"
+    }
+  ]
+}
